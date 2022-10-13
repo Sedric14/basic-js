@@ -30,6 +30,8 @@ function dateSample(sampleActivity) {
   return age;
 }
 
+
+
 // const i = dateSample('3');
 // console.log(i);
 

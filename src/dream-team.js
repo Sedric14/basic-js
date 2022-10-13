@@ -31,7 +31,6 @@ if(Array.isArray(members) === false) return false
   teamName = teamName.sort();
   return teamName.join('');
 }
-
 // let i = createDreamTeam([
 //   'Amelia',
 //   'Grace',

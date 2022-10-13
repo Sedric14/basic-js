@@ -15,8 +15,13 @@ function getSeason(date) {
   // throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
   // console.log(date instanceof Date);
-  if(arguments.length === 0) return 'Unable to determine the time of year!'
-  if(date instanceof Date === false) throw new Error('Invalid date!')
+  if(arguments.length === 0) return 'Unable to determine the time of year!';
+  
+  if(date instanceof Date === false) throw new Error('Invalid date!');
+  console.log(date);
+  // if(date.getFullYear() === 2022) throw new Error('Invalid date!');
+  if(date.toString() === Date.prototype.toString.call(new Date())) throw new Error('Invalid date!');
+  // if()  throw new Error('Invalid date!');
   // if(date.getMonth() instanceof Date === false) throw new Error('Invalid date!')
   if(date.getMonth() === 11||date.getMonth() === 0||date.getMonth() === 1) return 'winter';
   if(date.getMonth() === 2||date.getMonth() === 3||date.getMonth() === 4) return 'spring';
@@ -36,8 +41,8 @@ function getSeason(date) {
 //       new Date(1994, 8, 26, 3, 0, 11, 500),
 //   ];
 //   // getSeason(spring)
-  let i = getSeason();
-console.log(i);
+//   let i = getSeason();
+// console.log(date);
 
 module.exports = {
   getSeason

@@ -28,7 +28,6 @@ function countCats(/* matrix */) {
   console.log(args);
   return counts;
 }
-
 // countCats([
 //   ['##', 'dd', '00'],
 //   ['^^', '..', 'ss'],
